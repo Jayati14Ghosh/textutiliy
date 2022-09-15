@@ -80,7 +80,7 @@ return (
        <Route path="/contact" element={<Contact updateTextColor={updateTextColor} bg={bg} />} />
      </Routes>
     </BrowserRouter>
-    <TextUtility/>
+    <TextUtility updateTextColor={updateTextColor} bg={bg}/>
 
       {/*
          <Alert alert={alert}/>
