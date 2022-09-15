@@ -8,7 +8,7 @@ export default function Navbar(props){
     <>
       <nav className={`navbar navbar-expand-lg navbar-${props.navbar} bg-${props.bg}`}>
         <div className="container-fluid">
-          <Link className={`nav-link pe-3 text-${props.updateTextColor}`} to="/"><b>{props.title}</b></Link>
+          <Link className={`nav-link pe-3 text-${props.updateTextColor}`} to="/textutiliy"><b>{props.title}</b></Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>

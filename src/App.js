@@ -73,13 +73,14 @@ function App() {
 return (
   <>
     <BrowserRouter>
-      <Navbar title="Texutils" about="About Textutils" navbar={navbar} bg={bg} toggleLight={toggleLight} toggleBlue={toggleBlue} toggleDark={toggleDark} toggleGrey={toggleGrey} updateTextColor={updateTextColor} />      
+      <Navbar title="Texutils" about="About Textutils" navbar={navbar} bg={bg} toggleLight={toggleLight} toggleBlue={toggleBlue} toggleDark={toggleDark} toggleGrey={toggleGrey} updateTextColor={updateTextColor} />
       <Routes>
        <Route path="/" element={<TextUtility  updateTextColor={updateTextColor} bg={bg}/>} />
        <Route path="/about" element={<About updateTextColor={updateTextColor} bg={bg} />} />
        <Route path="/contact" element={<Contact updateTextColor={updateTextColor} bg={bg} />} />
      </Routes>
     </BrowserRouter>
+    <TextUtility/>
 
       {/*
          <Alert alert={alert}/>
